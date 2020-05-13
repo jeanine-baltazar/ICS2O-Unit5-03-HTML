@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(179, 179, 255);
+}
+h1 {
+  text-align:center;
+  background-color: rgb(179, 179, 255);
+  padding:10px;
+  width:700px;
+  margin-left:auto;
+  margin-right:auto;
+  color:white;
+  border:2px solid white;
+}
+form {
+  background-color:rgb(230, 230, 255);
+  padding:10px;
+  width:800px;
+  height:900px;
+  margin-left:auto;
+  margin-right:auto;
+  border:1px solid black;
+}
+#information {
+  width:720px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:110%;
+  font-family: serif;
+}
+#title {
+  font-weight: bold;
+  font-size:135%;
+  text-align:center;
+  margin-left:40px;
+  font-family: serif;
+  width:200px;
+}
+#input {
+  width:472px;
+  height:35px;
+  margin-left:40px;
+  font-size:120%;
+}
+#button {
+  background-color:rgb(179, 179, 255);
+  font-size:135%;
+  width:135px;
+  font-family: serif;
+  margin-left:43px;
+  color:white;
+  font-weight:bold;
+}

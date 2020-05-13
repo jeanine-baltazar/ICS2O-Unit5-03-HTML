@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <html lang="en-ca">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description"content="What ratings of movies can you watch?">
+      <meta name="keywords"content= "Rated R, Rated PG 13, Rated G, Movies.">
+      <meta name="author"content= "Jeanine Baltazar">
+      <meta name="viewport"content="width=device-width, initial-scale=1.0">
+      <title>What Movies Can You Watch</title>
+      <link rel="stylesheet" href="mystyle.css">
+      <script>
+        //This declares the variable
+        let yourAge;
+        //This is my function
+        function check() {
+          /* This makes the value of "yourAge", the value within the "yourage"
+          input box which is in the "movies" form. */
+          yourAge=document.movies.yourage.value;
+          //Creates an alert if "yourAge" is 17 or greater
+          if (yourAge>=17) {
+            alert("You can watch an R rated movie alone!")
+            /*if not 17 or greater, and is equal to or greater than 13,
+            another alert is displayed */
+          } else if (yourAge>=13) {
+            alert("You can watch a PG 13 rated movie alone!")
+            //if not 13 or greater, then another alert is displayed
+          } else {
+            alert("You can watch a G rated movie alone!")
+          }
+        }
+      </script>
+    </head>
+    <body>
+      <form name="movies">
+        <h1>What Movies Can You Watch?</h1>
+        <p id="information">
+          Hello World! This program will help you to know the highest
+          movie ratings you are allowed to see in a movie theatre
+          alone. Just type your age into the input box and click
+          the "Submit" button!
+        </p>
+        <table>
+          <tr>
+            <td>
+              <p id="title">What's Your Age?:</p>
+            </td>
+            <td>
+              <input type="text" name="yourage" id="input">
+            </td>
+          </tr>
+        </table>
+        <input type="button" value="Submit" onclick="check()" id="button">
+      </form>
+    </body>
+</html>
